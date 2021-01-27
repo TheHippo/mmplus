@@ -1,0 +1,1 @@
+document.getElementById('version_installed').innerText = chrome.runtime.getManifest().version;

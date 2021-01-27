@@ -1,0 +1,65 @@
+{
+	"name": "mmplus",
+	"version": "0.2",
+	"description": "Show JSON linked data",
+	"permissions": [
+		"declarativeContent",
+
+		"https://www.sn-online.de/",
+		"https://www.neuepresse.de/",
+		"https://www.paz-online.de/",
+		"https://www.waz-online.de/",
+		"https://www.goettinger-tageblatt.de/",
+		"https://www.ln-online.de/",
+		"https://www.ostsee-zeitung.de/",
+		"https://www.maz-online.de/",
+		"https://www.dnn.de/",
+		"https://www.lvz.de/"
+	],
+	"background": {
+		"scripts": [
+			"background.js"
+		],
+		"persistent": false
+	},
+	"page_action": {
+		"default_popup": "popup.html",
+		"default_icon": {
+			"16": "img/icon_16.png",
+			"32": "img/icon_32.png",
+			"48": "img/icon_48.png",
+			"128": "img/icon_128.png"
+		}
+	},
+	"content_scripts": [
+		{
+			"matches": [
+				"https://www.sn-online.de/*",
+				"https://www.neuepresse.de/*",
+				"https://www.paz-online.de/*",
+				"https://www.waz-online.de/*",
+				"https://www.goettinger-tageblatt.de/*",
+				"https://www.ln-online.de/*",
+				"https://www.ostsee-zeitung.de/*",
+				"https://www.maz-online.de/*",
+				"https://www.dnn.de/*",
+				"https://www.lvz.de/*"
+			],
+			"css": [
+				"style.css"
+			],
+			"run_at": "document_idle",
+			"js": [
+				"contentScript.js"
+			]
+		}
+	],
+	"icons": {
+		"16": "img/icon_16.png",
+		"32": "img/icon_32.png",
+		"48": "img/icon_48.png",
+		"128": "img/icon_128.png"
+	},
+	
+	"manifest_version": 2
+}
