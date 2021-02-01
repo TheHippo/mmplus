@@ -1,0 +1,10 @@
+---
+more:
+  - name: Releases
+    ref: "https://github.com/TheHippo/mmplus/releases"
+    external: true
+    icon: "download"
+  - name: "Quelltext"
+    ref: "https://github.com/TheHippo/mmplus"
+    external: true
+    icon: "github"
