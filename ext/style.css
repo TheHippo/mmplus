@@ -6,3 +6,13 @@
     font-size: 1.0625rem;
     line-height: 1.9375rem;
 }
+
+.pdb-parts-paidcontent-freeuntilbadge_open {
+	display: none !important;
+}
+
+/* .pdb-parts-paidcontent-freeuntilbadge_close::before {} */
+
+.pdb-parts-paidcontent-freeuntilbadge::before {
+	display: none !important;
+}
