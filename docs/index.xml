@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>mmplus</title>
+    <link>https://thehippo.github.io/mmplus/</link>
+    <description>Recent content on mmplus</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>de-de</language>
+    <lastBuildDate>Mon, 01 Feb 2021 23:21:46 +0100</lastBuildDate><atom:link href="https://thehippo.github.io/mmplus/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>
