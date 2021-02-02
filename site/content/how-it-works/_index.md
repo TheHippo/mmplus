@@ -11,5 +11,5 @@ Jeder der Internetseite enthält für jeden Artikel verschiedene Daten über den
 
 ## Erweiterung
 
-Die Erweiterung liest diese Daten aus und ersetzt bei Bedarf den Artikeltext mit Text der für Suchmaschienen bereitgestellt wird.
+Die Erweiterung liest diese Daten aus und ersetzt bei Bedarf den Artikeltext mit dem Text der für Suchmaschienen bereitgestellt wird.
 
