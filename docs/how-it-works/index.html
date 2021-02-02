@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Installation">
+<meta name="description" content="Funktionsweise">
 
-<title>Installation | mmplus</title>
+<title>Funktionsweise | mmplus</title>
 
 <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -37,7 +37,7 @@
 <link rel="preload" href="/mmplus/custom.css" as="style">
 <link rel="stylesheet" href="/mmplus/custom.css" media="all">
 
-<link rel="alternate" type="application/rss+xml" href="https://thehippo.github.io/mmplus/installation/index.xml" title="mmplus" />
+<link rel="alternate" type="application/rss+xml" href="https://thehippo.github.io/mmplus/how-it-works/index.xml" title="mmplus" />
 <!-- Made with Geekdoc theme https://github.com/thegeeklab/hugo-geekdoc -->
 
 </head>
@@ -94,7 +94,7 @@
             
             
                 <span class="flex">
-                    <a href="/mmplus/installation/" class="gdoc-nav__entry is-active">
+                    <a href="/mmplus/installation/" class="gdoc-nav__entry ">
                         Installation
                     </a>
                 </span>
@@ -146,7 +146,7 @@
             
             
                 <span class="flex">
-                    <a href="/mmplus/how-it-works/" class="gdoc-nav__entry ">
+                    <a href="/mmplus/how-it-works/" class="gdoc-nav__entry is-active">
                         Funktionsweise
                     </a>
                 </span>
@@ -299,40 +299,130 @@
 </div>
 
     <article class="gdoc-markdown">
-        <h1>Installation</h1>
+        <h1>Funktionsweise</h1>
         
 
 
 
 
-<blockquote class="gdoc-hint info">
-  <strong>Chrome Webstore</strong><br>
-Die Erweiterung ist <strong>nicht</strong> über den Chrome Webstore erhältlich. Die offensichtlichen Gründe hierfür sind, dass die betroffenen Zeitungen diese
-Erweitungen sicher nicht gut finden werden und ich mir so Ärger mit Google erspare.
-</blockquote>
+<p>Jeder der Internetseite enthält für jeden Artikel verschiedene Daten über den Artikel in Computer-lesbarer Form bereit.</p>
+<h2 id="beispiel">Beispiel</h2>
 
-<h2 id="schritt-für-schritt">Schritt für Schritt</h2>
-<ol>
-<li>Lade dir die neuste Version herunter: <a href="https://github.com/TheHippo/mmplus/releases/latest" target="_blank" rel="noopener noreferrer">Neuste Version</a> (Wähle die <strong>mmplus.zip</strong> Datei)</li>
-<li>Die Zip Datei auf der eigenen Festplatte entpacken, möglichst an einen Ort den du wiederfindest.</li>
-<li>Öffne im Chrome die Seite für Erweiterungen:
-<ul>
-<li><em>Entweder:</em> Kopiere und öffne diesen Link: chrome://extensions/</li>
-<li><em>Oder:</em> <strong>Chrome Menü</strong> (drei Punkte oben recht) &ndash;&gt; <strong>Weitere Tools</strong> &ndash;&gt; <strong>Erweiterungen</strong></li>
-</ul>
-</li>
-<li><strong>Entwickler Modus</strong> aktivieren (oben rechts)</li>
-<li><strong>Entpackte Erweitung laden</strong> auswählen (oben links)</li>
-<li>Den Ordner aus dem zweiten Schritt auswählen</li>
-</ol>
-<p>Nun sollte die Erweiterung als eine der ersten erscheinen und auf allen Seiten automatisch aktiviert sein.</p>
+<div class="gdoc-include"><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span><span class="lnt">46
+</span><span class="lnt">47
+</span><span class="lnt">48
+</span><span class="lnt">49
+</span><span class="lnt">50
+</span><span class="lnt">51
+</span><span class="lnt">52
+</span><span class="lnt">53
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">script</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;application/ld+json&#34;</span><span class="p">&gt;</span>
+<span class="p">{</span>
+    <span class="s2">&#34;@context&#34;</span><span class="o">:</span><span class="s2">&#34;http://schema.org&#34;</span><span class="p">,</span>
+    <span class="s2">&#34;@type&#34;</span><span class="o">:</span><span class="s2">&#34;NewsArticle&#34;</span><span class="p">,</span>
+    <span class="s2">&#34;genre&#34;</span><span class="o">:</span><span class="s2">&#34;News&#34;</span><span class="p">,</span>
+    <span class="s2">&#34;datePublished&#34;</span><span class="o">:</span><span class="s2">&#34;2021-02-01T19:00:00+00:00&#34;</span><span class="p">,</span>
+    <span class="s2">&#34;dateModified&#34;</span><span class="o">:</span><span class="s2">&#34;2021-02-01T21:22:34+00:00&#34;</span><span class="p">,</span>
+    <span class="s2">&#34;keywords&#34;</span><span class="o">:</span><span class="s2">&#34;tcf:Nachricht,tct:Landespolitik&#34;</span><span class="p">,</span>
+    <span class="s2">&#34;thumbnailUrl&#34;</span><span class="o">:</span><span class="s2">&#34;https://mar.prod.image.rndtech.de/var/storage/images/lvz/region/mitteldeutschland/plan-fuer-lockdown-ausstieg-sachsen-will-schulen-am-15.-februar-oeffnen/762293633-5-ger-DE/Fahrplan-fuer-Lockdown-Ausstieg-Sachsen-will-Schulen-am-15.-Februar-oeffnen_master_reference.jpg&#34;</span><span class="p">,</span>
+    <span class="s2">&#34;mainEntityOfPage&#34;</span><span class="o">:</span><span class="p">{</span>
+        <span class="s2">&#34;@type&#34;</span><span class="o">:</span><span class="s2">&#34;WebPage&#34;</span><span class="p">,</span>
+        <span class="s2">&#34;@id&#34;</span><span class="o">:</span><span class="s2">&#34;https://www.lvz.de/Region/Mitteldeutschland/Plan-fuer-Lockdown-Ausstieg-Sachsen-will-Schulen-am-15.-Februar-oeffnen&#34;</span>
+    <span class="p">},</span>
+    <span class="s2">&#34;author&#34;</span><span class="o">:</span><span class="p">{</span>
+        <span class="s2">&#34;@type&#34;</span><span class="o">:</span><span class="s2">&#34;Organization&#34;</span><span class="p">,</span>
+        <span class="s2">&#34;name&#34;</span><span class="o">:</span><span class="s2">&#34;LVZ&#34;</span>
+    <span class="p">},</span>
+    <span class="s2">&#34;headline&#34;</span><span class="o">:</span><span class="s2">&#34;Plan für Lockdown-Ausstieg: Sachsen will Schulen am 15. Februar öffnen&#34;</span><span class="p">,</span>
+    <span class="s2">&#34;description&#34;</span><span class="o">:</span><span class="s2">&#34;Sachsen stellt die Weichen für erste Corona-Lockerungen: Am 15. Februar sollen Kitas und Schulen wieder öffnen. Dafür gibt ein Bericht aus dem Kultusministerium, der am Dienstag dem Kabinett vorgelegt wird, grünes Licht.&#34;</span><span class="p">,</span>
+    <span class="s2">&#34;articleBody&#34;</span><span class="o">:</span><span class="s2">&#34;In Sachsen haben die vorgezogenen Winterferien begonnen – doch die Planungen für einen Neustart der Kitas und Schulen laufen auf Hochtouren. Das Kultusministerium wird dem Kabinett am Dienstag einen Bericht zu den Abschlussklassen vorlegen, die bereits seit dem 18. Januar unterrichtet werden. Das vierseitige Papier, das der LVZ vorliegt, gilt als wesentlicher Baustein für eine Öffnung ab 15. Februar. Der entscheidende Satz lautet: „In den ersten zwei Wochen seit der Wiederaufnahme der Präsenzbeschulung ist die Infektionslage an den Schulen als unauffällig einzuschätzen.“ Kultusministerium registriert „geringe Anzahl von Neuinfektionen“: Von den knapp 51.000 Jugendlichen in Ober-, Förder- und Fachoberschulen sowie Gymnasien und Kollegs hat sich etwa ein Drittel einem freiwilligen Corona-Schnelltest unterzogen. Lag ein positives Ergebnis vor, folgte eine PCR-Testung, die als zuverlässiger gilt. Demnach wurde in den beiden Öffnungswochen bei 54 Schülern eine Corona-Infektion nachgewiesen. Von den etwa 12.000 eingesetzten Lehrern hatten sich 5100 testen lassen, in 22 Fällen lag ebenfalls eine Ansteckung vor. Das sächsische Kultusministerium spricht von einer „geringen Anzahl von Neuinfektionen“ – damit können die Weichen für weitere Lockerungen gestellt werden. Außerdem heißt es in der Zwischenbilanz: „Der Schulbetrieb seit der Wiederaufnahme der Präsenzbeschulung läuft weitestgehend reibungslos.“ Berufsschulen öffnen ab 8. Februar für Abschlussklassen: Damit dürfte einer weiteren Öffnung von Kitas und Schulen kaum noch etwas entgegenstehen –sofern die Infektionszahlen in Sachsen weiterhin sinken. Ab 8. Februar sollen zunächst die Abschlussjahrgänge an die Berufs-, Berufsfach- und Fachschulen zurückkehren. Eine Woche später soll dann der großflächige Neustart erfolgen: Kitas und Grundschulen öffnen unter Auflagen, ab Klasse 5 erfolgt Wechselunterricht. Schul-Neustart mit großflächiger Teststrategie: Der aktuelle Fahrplan sieht auch Schnelltests für alle Schüler ab der siebenten Klasse, Lehrer und pädagogisches Personal, „das einen Bezug zum Unterricht aufweist“, vor. Dafür sind bereits Vereinbarungen mit dem Deutschen Roten Kreuz und der Kassenärztlichen Vereinigung geschlossen worden. Außerdem befindet sich ein entsprechender Vertrag mit dem Apothekerverband „in finaler Vorbereitung“. Das Kultusministerium hat schon 500.000 Schnelltest auf Lager. Da in der nächsten Woche eine neue Corona-Schutzverordnung für die Zeit nach dem 14. Februar beschlossen werden muss, wird die endgültige Entscheidung zur Öffnung wahrscheinlich am kommenden Dienstag fallen. Lesen Sie mehr zum Thema: Vize-Regierungschef Günther will Stufenplan für Lockerungen Lerndefizite: Kinderschutzbund schlägt Alarm Alle Hintergründe zur Coronapandemie in Leipzig Günther: Kinderbetreuung und Schulen haben höchste Priorität: „Die Kinderbetreuung und die Schulen haben eindeutig die höchste Priorität“, erklärt Sachsens 1. Vize-Ministerpräsident Wolfram Günther (Grüne) schon jetzt gegenüber der LVZ: Aus heutiger Sicht spreche nichts dagegen, die Schulen ab 15. Februar unter gewissen Einschränkungen wieder zu öffnen. Voraussetzung sei allerdings, dass die Corona-Ansteckungszahlen rückläufig blieben. „Die Schulen wegen der Infektion zu schließen, war richtig. Aber bildungspolitisch und sozial, für viele Eltern und Alleinerziehende ist das ein Desaster“, sagt Günther. Nach den Kitas und Schulen könnten weitere Bereiche öffnen: „Natürlich brauchen wir auch Überlegungen, wie es darüber hinaus weitergehen kann. Das reicht von körpernahen Dienstleistungen wie Friseur oder Kosmetik bis zum Abholservice bei Händlern.“ Von Andreas Debski&#34;</span><span class="p">,</span>
+    <span class="s2">&#34;isAccessibleForFree&#34;</span><span class="o">:</span><span class="s2">&#34;False&#34;</span><span class="p">,</span>
+    <span class="s2">&#34;isPartOf&#34;</span><span class="o">:</span><span class="p">{</span>
+        <span class="s2">&#34;@type&#34;</span><span class="o">:</span><span class="p">[</span>
+            <span class="s2">&#34;CreativeWork&#34;</span><span class="p">,</span>
+            <span class="s2">&#34;Product&#34;</span>
+        <span class="p">],</span>
+        <span class="s2">&#34;name&#34;</span><span class="o">:</span><span class="s2">&#34;Leipziger Volkszeitung&#34;</span><span class="p">,</span>
+        <span class="s2">&#34;productID&#34;</span><span class="o">:</span><span class="s2">&#34;lvz.de:paid&#34;</span>
+    <span class="p">},</span>
+    <span class="s2">&#34;hasPart&#34;</span><span class="o">:</span><span class="p">{</span>
+        <span class="s2">&#34;@type&#34;</span><span class="o">:</span><span class="s2">&#34;WebPageElement&#34;</span><span class="p">,</span>
+        <span class="s2">&#34;isAccessibleForFree&#34;</span><span class="o">:</span><span class="s2">&#34;False&#34;</span><span class="p">,</span>
+        <span class="s2">&#34;cssSelector&#34;</span><span class="o">:</span><span class="s2">&#34;.pdb-article-body&#34;</span>
+    <span class="p">},</span>
+    <span class="s2">&#34;publisher&#34;</span><span class="o">:</span><span class="p">{</span>
+        <span class="s2">&#34;@type&#34;</span><span class="o">:</span><span class="s2">&#34;Organization&#34;</span><span class="p">,</span>
+        <span class="s2">&#34;name&#34;</span><span class="o">:</span><span class="s2">&#34;Leipziger Volkszeitung&#34;</span><span class="p">,</span>
+        <span class="s2">&#34;logo&#34;</span><span class="o">:</span><span class="p">{</span>
+            <span class="s2">&#34;@type&#34;</span><span class="o">:</span><span class="s2">&#34;ImageObject&#34;</span><span class="p">,</span>
+            <span class="s2">&#34;url&#34;</span><span class="o">:</span><span class="s2">&#34;https://www.lvz.de/bundles/molasset/images/sites/desktop/lvz/logo_publisher.png&#34;</span>
+        <span class="p">}</span>
+    <span class="p">},</span>
+    <span class="s2">&#34;image&#34;</span><span class="o">:</span><span class="p">{</span>
+        <span class="s2">&#34;@type&#34;</span><span class="o">:</span><span class="s2">&#34;ImageObject&#34;</span><span class="p">,</span>
+        <span class="s2">&#34;name&#34;</span><span class="o">:</span><span class="s2">&#34;Fahrplan-fuer-Lockdown-Ausstieg-Sachsen-will-Schulen-am-15.-Februar-oeffnen.jpg&#34;</span><span class="p">,</span>
+        <span class="s2">&#34;url&#34;</span><span class="o">:</span><span class="s2">&#34;https://mar.prod.image.rndtech.de/var/storage/images/lvz/region/mitteldeutschland/plan-fuer-lockdown-ausstieg-sachsen-will-schulen-am-15.-februar-oeffnen/762293633-5-ger-DE/Fahrplan-fuer-Lockdown-Ausstieg-Sachsen-will-Schulen-am-15.-Februar-oeffnen_reference_4_3.jpg&#34;</span><span class="p">,</span>
+        <span class="s2">&#34;description&#34;</span><span class="o">:</span><span class="s2">&#34;Ab 15. Februar sollen sich die Klassenzimmer in Sachsen zumindest teilweise füllen.&#34;</span><span class="p">,</span>
+        <span class="s2">&#34;copyrightHolder&#34;</span><span class="o">:</span><span class="s2">&#34;Caroline Seidel/dpa&#34;</span><span class="p">,</span>
+        <span class="s2">&#34;height&#34;</span><span class="o">:</span><span class="mi">1200</span><span class="p">,</span>
+        <span class="s2">&#34;width&#34;</span><span class="o">:</span><span class="mi">1600</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+<span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span></code></pre></td></tr></table>
+</div>
+</div></div>
 
-
-<img src="https://thehippo.github.io/mmplus/final.png">
-<blockquote class="gdoc-hint ok">
-  Der Entwicklermodus kann nun wieder deaktiviert werden.
-</blockquote>
-
+<h2 id="erweiterung">Erweiterung</h2>
+<p>Die Erweiterung liest diese Daten aus und ersetzt bei Bedarf den Artikeltext mit Text der für Suchmaschienen bereitgestellt wird.</p>
 
 
     </article>
