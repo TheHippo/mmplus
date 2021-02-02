@@ -6,7 +6,7 @@ weight: 4
 slug: "unterstuezte-seiten"
 ---
 
-Folgende Seiten werden von mmplus unterstützt:
+Folgende Seiten werden von *mmplus* unterstützt:
 
 - {{< external "Schaumburger Nachrichten" "https://www.sn-online.de" >}}
 - {{< external "Neue Presse" "https://www.neuepresse.de" >}}
