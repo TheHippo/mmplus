@@ -32,6 +32,8 @@
 
 <link rel="preload" href="{{ index .Site.Data.assets "custom.css" | relURL }}" as="style">
 <link rel="stylesheet" href="{{ index .Site.Data.assets "custom.css" | relURL }}" media="all">
+<link rel="stylesheet" type="text/css"
+    href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
 
 {{ with .OutputFormats.Get "rss" -}}
     {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
