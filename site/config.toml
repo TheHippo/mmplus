@@ -25,3 +25,5 @@ disablePathToLower = true
 	geekdocBreadcrumb = false
 	geekdocAnchor = false
   	geekdocAnchorCopy = false
+	
+	latestDownloadLink = "https://github.com/TheHippo/mmplus/releases/download/v0.3/mmplus.zip"

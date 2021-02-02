@@ -13,7 +13,7 @@ Erweitungen sicher nicht gut finden werden und ich mir so Ärger mit Google ersp
 
 ## Schritt für Schritt
 
-1. Lade dir die neuste Version herunter: {{< external "Neuste Version" "https://github.com/TheHippo/mmplus/releases/latest" >}} (Wähle die **mmplus.zip** Datei)
+1. Lade dir die neuste Version herunter: {{< download-link >}}
 2. Die Zip Datei auf der eigenen Festplatte entpacken, möglichst an einen Ort den du wiederfindest.
 3. Öffne im Chrome die Seite für Erweiterungen:
 	- *Entweder:* Kopiere und öffne diesen Link: chrome://extensions/
