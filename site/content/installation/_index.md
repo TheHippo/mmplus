@@ -24,7 +24,7 @@ Erweitungen sicher nicht gut finden werden und ich mir so Ärger mit Google ersp
 
 Nun sollte die Erweiterung als eine der ersten erscheinen und auf allen Seiten automatisch aktiviert sein.
 
-{{< asset-image "final.png" >}}
+{{< asset-image "final.png" "Installierte Erweiterung" >}}
 
 {{< hint ok >}}
 Der Entwicklermodus kann nun wieder deaktiviert werden.
