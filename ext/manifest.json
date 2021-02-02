@@ -1,7 +1,7 @@
 {
 	"name": "mmplus",
-	"version": "0.2",
-	"description": "Show JSON linked data",
+	"version": "0.3",
+	"description": "Show JSON+LD for various websites",
 	"permissions": [
 		"declarativeContent",
 
