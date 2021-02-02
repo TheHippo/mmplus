@@ -8,7 +8,7 @@ weight: 2
 Auf jeder der unterstützten Seiten kann überprüft werden ob eine neue Version der Erweiterung verfügtbar ist.
 Dafür einfach das Symbol der Erweitung anklicken, gegebenenfalls versteckt diese sich hinter dem Puzzle Icon.
 
-![Versions Übersicht](/img/update.png)
+{{< asset-image "update.png" >}}
 
 * Der **Download Button** lädt automatisch die aktuellste Version herunter.
 * Der **Instructions Button** bringt dich zu dieser Seite.
@@ -23,7 +23,7 @@ Dafür einfach das Symbol der Erweitung anklicken, gegebenenfalls versteckt dies
 3. Suche die **mmplus** Erweiterung und klicke den **drehenden Pfeil** unten recht in der Karte.
 4. Die Versionsnummer hinten dem Namen sollte auf die neue Version angepasst werden.
 
-![Geladenen Erweiterung](/img/final.png)
+{{< asset-image "final.png" >}}
 
 {{< hint info >}}
 **Offene Tabs**\
