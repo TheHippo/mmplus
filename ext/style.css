@@ -1,18 +1,29 @@
 #mmouter {
-	margin: 30px auto 0;
-	width: 602px;
-	color: #000;
-    font-family: Merriweather,Georgia,serif;
-    font-size: 1.0625rem;
-    line-height: 1.9375rem;
+	font-family: "Source Serif Pro", serif;
+	font-size: 17px;
+	margin: 0px;
+    padding-bottom: 8px;
+    padding-top: 8px;
+    font-weight: 400;
+    letter-spacing: 0px;
+    line-height: 26px;
+    color: rgb(41, 56, 69);
 }
 
-.pdb-parts-paidcontent-freeuntilbadge_open {
+[data-testid="paid-icon-container"] {
 	display: none !important;
 }
+
+h2 span[data-testid="paid-icon"] {
+	display: none !important;
+}
+
+/* .pdb-parts-paidcontent-freeuntilbadge_open {
+	display: none !important;
+} */
 
 /* .pdb-parts-paidcontent-freeuntilbadge_close::before {} */
 
-.pdb-parts-paidcontent-freeuntilbadge::before {
+/* .pdb-parts-paidcontent-freeuntilbadge::before {
 	display: none !important;
-}
+} */

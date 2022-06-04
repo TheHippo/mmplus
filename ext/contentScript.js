@@ -7,30 +7,51 @@ function prepareHTML(body) {
 	parts = body.split(/(?=\d{2}\.\d{2}\.\d{2}\s\d{2}:\d{2})/g)
 	return parts.join('<br>')
 }
-
+const ldScriptIndex = 2;
 var ld = document.querySelectorAll('script[type="application/ld+json"]')
-// the first element is usually some generic json ld data, we need the second one
-if (ld[1]) {
+// the first elements are usually some generic json ld data, we need the third one
+if (ld[ldScriptIndex]) {
 	// ld json for document is there
-	content = JSON.parse(ld[1].innerText);
+	content = JSON.parse(ld[ldScriptIndex].innerText);
 	// the console is noisy as fuck anyway...
 	console.log(content);
 
-	if (content.isPartOf && content.isPartOf.productID && content.isPartOf.productID.includes('paid')) {
+	if (!content.isAccessibleForFree) {
 		// we don't need to do all of this if the article is free anyway
-		// thats not actually the image, but the expandable caption
-		var image = document.getElementsByClassName('pdb-article-caption')[0];
-		if (image) {
-			var div = document.createElement('div');
-			// id for styling
-			div.id = "mmouter";
-			div.innerHTML = prepareHTML(content.articleBody);
-			image.parentNode.insertBefore(div, image.nextElementSibling);
-
-			var preview = document.getElementsByClassName('pdb-article-body')[0];
-			if (preview) {
-				preview.remove();
-			}
+		
+		// remove the intro text
+		var intro = document.querySelector('header > :last-child');
+		if (intro) {
+			intro.remove();
 		}
+
+		// remove the buy Abo section
+		var paywall = document.querySelector('header + *');
+		if (paywall) {
+			paywall.remove();
+		}
+
+		var header = document.querySelector('header');
+		var div = document.createElement('div');
+
+		var date = new Date(Date.parse(content.datePublished));
+		
+		// id for styling
+		div.id = "mmouter";
+		div.innerHTML = 
+			content.description +
+			"<hr/>" + 
+			prepareHTML(content.articleBody) + 
+			"<hr/>" + 
+			content.author.name + ' / ' + content.publisher.name + ' ' + date.toLocaleTimeString('de-de') + ' ' + date.toLocaleDateString('de-de');
+
+		header.insertAdjacentElement('afterend', div);
+
+		// remove other stuff
+
+		document.querySelector('#mmouter + div').remove();
+		document.querySelector('#mmouter + svg').remove();
+
+		
 	}
 }
