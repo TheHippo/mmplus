@@ -1,38 +1,24 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
   <url>
     <loc>https://thehippo.github.io/mmplus/installation/</loc>
     <lastmod>2021-02-02T04:31:34+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://thehippo.github.io/mmplus/updates/</loc>
     <lastmod>2021-02-02T03:11:18+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://thehippo.github.io/mmplus/how-it-works/</loc>
-    <lastmod>2021-02-02T01:26:24+01:00</lastmod>
-  </url>
-  
-  <url>
+    <lastmod>2021-02-02T05:25:42+01:00</lastmod>
+  </url><url>
     <loc>https://thehippo.github.io/mmplus/supported-sites/</loc>
-    <lastmod>2021-02-02T01:26:24+01:00</lastmod>
-  </url>
-  
-  <url>
+    <lastmod>2022-06-05T00:14:44+02:00</lastmod>
+  </url><url>
     <loc>https://thehippo.github.io/mmplus/</loc>
     <lastmod>2021-02-02T02:44:00+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://thehippo.github.io/mmplus/categories/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://thehippo.github.io/mmplus/tags/</loc>
   </url>
-  
 </urlset>
