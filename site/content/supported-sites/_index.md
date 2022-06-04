@@ -8,6 +8,10 @@ slug: "unterstuezte-seiten"
 
 Folgende Seiten werden von *mmplus* unterstützt:
 
+- {{< external "Leipziger Volkzeitung" "https://www.lvz.de" >}}
+
+Folgende Seiten könnten wahrscheinlich von *mmplus* unterstützt werden:
+
 - {{< external "Schaumburger Nachrichten" "https://www.sn-online.de" >}}
 - {{< external "Neue Presse" "https://www.neuepresse.de" >}}
 - {{< external "Peiner Allgemeine" "https://www.paz-online.de" >}}
@@ -19,5 +23,5 @@ Folgende Seiten werden von *mmplus* unterstützt:
 - {{< external "Ostsee Zeitung" "https://www.ostsee-zeitung.de" >}}
 - {{< external "Märkische Allgemeine" "https://www.maz-online.de" >}}
 - {{< external "Dresdner Neueste Nachrichten" "https://www.dnn.de" >}}
-- {{< external "Leipziger Volkzeitung" "https://www.lvz.de" >}}
+
 
